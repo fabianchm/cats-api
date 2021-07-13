@@ -2,6 +2,10 @@
 
 namespace Tests\Feature\Pictures;
 
+use App\Exceptions\CatPictureResponseError;
+use App\Exceptions\CatPictureResponseNotValid;
+use App\Exceptions\UrlNotValid;
+use Illuminate\Support\Facades\Http;
 use Tests\TestCase;
 
 class CatPicturesTest extends TestCase
