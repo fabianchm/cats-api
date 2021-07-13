@@ -16,6 +16,10 @@ class CatPicturesGetController extends Controller
 
     public function __invoke()
     {
-        return $this->catPictureGetter->getUrl();
+        $url = $this->catPictureGetter->getUrl();
+
+        return response()->json([
+            'url' => $url,
+        ]);
     }
 }

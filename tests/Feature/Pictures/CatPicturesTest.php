@@ -15,6 +15,9 @@ class CatPicturesTest extends TestCase
     {
         $response = $this->getJson(route('pictures.cats.get'));
 
-        $response->assertStatus(200);
+        $response->assertStatus(200)
+            ->assertJsonStructure([
+                'url'
+            ]);
     }
 }
