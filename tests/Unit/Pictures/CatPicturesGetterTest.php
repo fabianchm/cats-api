@@ -1,8 +1,7 @@
 <?php
 
 
-namespace Pictures;
-
+namespace Tests\Unit\Pictures;
 
 use App\Exceptions\CatPictureResponseError;
 use App\Exceptions\CatPictureResponseNotValid;
